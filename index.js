@@ -65,8 +65,8 @@ function CemberinCevresi(r) {
 */
 
 function CemberinAlani(r, pi) {
-return pi*Math.pow(r, 2);
-}
+  return pi*Math.pow(r, 2);
+  }
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
@@ -90,14 +90,25 @@ return pi*Math.pow(r, 2);
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
 let ucetambolunenler,
-  enkucuk,
-  enbuyuk,
+  enkucuk = sayilar[0],
+  enbuyuk = 0,
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
   siralisayilar,
   tekraredensayilar;
 
 // 3a çözümü
+
+for (let i =0; i<sayilar.length; i++){
+  if (sayilar[i] < enkucuk){
+     enkucuk = sayilar[i];
+     
+  }if (sayilar[i] >= enbuyuk){
+    enbuyuk = sayilar[i];
+  }
+}
+
+
 
 /* kodlar buraya */
 
